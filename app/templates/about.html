@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <form action="home"><button class="header_button">Home</button></form>
+        <form action="about"><button class="header_button">About</button></form>
+        <form action="contact"><button class="header_button">Contact</button></form>
+    </header>
+    <div class="container">
+        <h2>About Us</h2>
+        <div>We are a team of passionate developers building web apllications with Flask</div>
+        <ul>
+            <li>Mission: To leach programming effectively.</li>
+            <li>Vision: Empower people to build their ideas.</li>
+            <li>Values: Collabaration, innovation, and learning.</li>
+        </ul>
+    </div>
+    <footer>
+        <div>©️ 2025 My Flask App</div>
+    </footer>
+</body>
+</html>

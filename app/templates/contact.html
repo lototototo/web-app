@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <form action="home"><button class="header_button">Home</button></form>
+        <form action="about"><button class="header_button">About</button></form>
+        <form action="contact"><button class="header_button">Contact</button></form>
+    </header>>
+    <div class="container_contact">
+        <h1>Contact Us</h1>
+        <form action="send" method="POST" class="container_form">
+            <label for="name" class="contact_form">Your Name:<input type="text" name='name' class="min_input" required></label>
+            <label for="email" class="contact_form">Your Email:<input type="email" name="email" class="min_input" required></label>
+            <label for="name" class="contact_form">Your Message:<input type="text" name="message" class="max_input" required></label>
+            <button class="send_button">Send</button>
+        </form>
+    </div>
+    <footer>
+        <div>©️ 2025 My Flask App</div>
+    </footer>
+</body>
+
+</html>

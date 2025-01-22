@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 5px;
+    justify-content: center;
+    background-color: rgb(61, 55, 55);
+    color: white;
+    gap: 20px
+
+}
+
+button {
+    background-color: rgb(61, 55, 55);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.send_button {
+    background-color: rgb(61, 55, 55);
+    max-width: 80px;
+    width: 100%;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.content {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 647px 0;
+    gap: 20px;
+}
+
+.flask_img {
+    width: 12%;
+}
+
+.container {
+    padding: 30px 0 673px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.container_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0 446px 0;
+}
+
+.container_form {
+    margin-top: 10px;
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 600px;
+    width: 100%;
+    background-color: rgb(231, 229, 229);
+    border: 1px solid gray;
+    border-radius: 7px;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.min_input {
+    max-width: 500px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.max_input {
+    max-width: 500px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.text_suc{
+    color: green;
+}
+
+.container_contact_suc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0 436px 0;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px 5px;
+    background-color: rgb(61, 55, 55);
+    color: white;
+}
