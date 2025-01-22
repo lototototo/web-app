@@ -1,9 +1,11 @@
 from flask import render_template, request, redirect, url_for
 from app import app
+from datetime import datetime
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    current_time = datetime.now()
+    return render_template('index.html', current_time=current_time)
 
 @app.route('/home')
 def red_home():
@@ -11,11 +13,13 @@ def red_home():
 
 @app.route('/about')
 def about():
-    return render_template('about.html')
+    users = ['Alice','Bob','Charlie']
+    return render_template('about.html', users_list=users)
 
 @app.route('/contact')
 def contact():
-    return render_template('contact.html')
+    contact_dict = {'manager':'John Black', 'address':{'street':'Lenina', 'city':'Moscow', 'index':'142110'}} 
+    return render_template('contact.html', contact_dict=contact_dict)
 
 @app.route('/send', methods=['POST', 'GET'])
 def send():

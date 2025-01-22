@@ -20,6 +20,13 @@
             <li>Vision: Empower people to build their ideas.</li>
             <li>Values: Collabaration, innovation, and learning.</li>
         </ul>
+        <div> Our Employees:
+            <ul class="employees_ul">
+                {% for user in users_list %}
+                    <li>{{user}}</li>
+                {%endfor%}
+            </ul>
+        </div>
     </div>
     <footer>
         <div>©️ 2025 My Flask App</div>
